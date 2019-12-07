@@ -77,7 +77,7 @@ export default class Home extends React.Component {
                     <small className="form-text text-muted">This is just to save your results for future reference. Please enter email Id if you wish to extract text</small>
                   </div>
 
-                  <div style={{ width: "100px", height: "300px", marginLeft: "250px" }} className="text-center" >
+                  <div style={{ width: "60px", height: "60px", marginLeft: "250px" }} className="text-center" >
                     {this.state.files ? <img src={this.state.files} alt="selected" className="img-fluid" /> : <span></span>}
                   </div>
                   <FileBase64
