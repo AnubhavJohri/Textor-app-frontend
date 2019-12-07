@@ -71,7 +71,7 @@ export default class Home extends React.Component {
                 <div className="card-title"><h1 className="display-4">Upload the Pic</h1></div>
               </div>
               <div className="card-body">
-                <form onSubmit={this.handleSubmit}>
+                <form autoComplete="off" onSubmit={this.handleSubmit}>
                   <div className="form-group">
                     <input type="email" onChange={this.handleChange} placeholder="Please Enter Your Email-Id to Upload" name="email" className="form-control" />
                     <small className="form-text text-muted">This is just to save your results for future reference. Please enter email Id if you wish to extract text</small>

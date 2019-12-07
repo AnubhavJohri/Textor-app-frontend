@@ -73,11 +73,11 @@ export default class History extends React.Component {
                 <div className = "container">
                     <div className = "row">
                         <div className = "col-lg-8 offset-lg-2" style={{backgroundColor : "lightgreen" , marginTop : "20px" , borderRadius : "10px" }}>
-                            <form  onSubmit = {this.handleSubmit}>
+                            <form autoComplete="off"  onSubmit = {this.handleSubmit}>
                                 <div className = "form-group" style={{marginTop : "20px" }} >
                                     <input type="email" name="userId" onChange={this.handleChange} placeholder = "Enter Your Registered Email-id" className = "form-control"/>
                                 </div>
-                                <button type="submit" className = "btn btn-primary form-group">Submit</button><br/>
+                                <button type="submit" disabled={!this.state.userId} className = "btn btn-primary form-group">Submit</button><br/>
                                 <span name = "errorMessage" className = "text-danger">{this.state.errorMessage}</span>
                             </form>
                             {this.state.images.length? this.DisplayTable(this.state.images) :<span></span>}
