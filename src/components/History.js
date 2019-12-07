@@ -21,7 +21,7 @@ export default class History extends React.Component {
 
     handleSubmit = ( e ) => {
         e.preventDefault() ;
-        this.setState({images:[]})
+        this.setState({images:[] , errorMessage : ""})
         let url = "https://textor-app-backend.herokuapp.com/image/extracthistory/";
         //let url = "http://localhost:3001/image/extracthistory/" ;
         url = url+this.state.userId ;
